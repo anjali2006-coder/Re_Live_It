@@ -6,24 +6,38 @@
     <title>ReLiveIt</title>
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
         body{
             background-color:#e5f5e0;
             padding-top:20px;
+            font-family:'Amaranth';
         }
         .list_items{
-            height:120px ;
-            background-color: #e5f5e0;
-            color: black ;
-            padding:2px 4px ;
-            text-align: center;
+            height:190px ;
+            width:300px;
+            display: flex;
+            /* background-color:#e5f5e0 ; */
+            text-align: justify;
             align-items: center;
-            border-top-right-radius: 20px;
-            border-bottom-left-radius: 20px;
+            padding-left: 10px;
+            padding-right:10px;
+            /* border: 2px solid #006d2c; */
+            /* box-shadow: h-offset v-offset blur-radius spread-radius color inset; */
+            box-shadow: 0 0 5px 2px #e5f5e0b4;
+            transition: all 0.3s ease-in-out;
+        }
+        .list_items:hover{
+           background-color:#e5f5e0b4 ;
+           box-shadow: none ;
+           color: #006d2c9a;
+           transform: scale(1.2);
         }
      </style>
 </head>
 <body>
     <div class="flex flex-col gap-4 ">
+
     <div class="heade-seaction flex items-center border-bottom pl-[20px] pr-[20px]">
         <div class="logo flex-1"><h1 class="text-extrabold text-3xl text-[#006d2c]">ReliveIt</h1></div>
         <div class="flex-1">
@@ -49,28 +63,69 @@
     <!-- home section end -->
 
 <!-- about us section start -->
- <div class="about_us_section items-center bg-[#238b45] p-[20px]">
+ <div class="about_us_section flex flex-col gap-11 items-center  p-[20px] bg-[#006d2c9a] pb-[80px]">
     <h1 class="text-4xl text-extrabold text-center">About Us</h1>
-    <div class="flex gap-4 items-center">
-        <img src="/website/src/images/image-1.png" alt="">
-        <p class="text-justify px-9 py-2 bg-[#238b45] text-[#e5f5e0]">We created this platform with one simple belief:
+    <div class= "items-center flex flex-col gap-10">
+        <p class="text-center px-9 py-2 ">We created this platform with one simple belief:
         <span class="text-xl text-bold"></span>Nothing that can still be useful should ever be thrown away.
         Every home has items that are no longer needed — clothes we do not wear, books we have already read, gadgets we don't use, or household items lying untouched. Instead of ending up in the trash, these items can gain a second life in someone else's hands.
         Our platform connects people who want to give away usable items with those who can reuse them.
         It is more than a donation system — it is a movement towards mindful living, sustainability, and community care.</p>
-    </div>
-    <div class="text-white p-[20px]">
-        <h1 class="text-xl text-bold text-black">Here you can: </h1>
-        <ul class="flex gap-4">
-            <li class="list_items">Give away items you don't need.</li>
-            <li class="list_items">Discover free items from others.</li>
-            <li class="list_items">Spread awareness about reducing waste.</li>
-            <li class="list_items">Share photos and stories that inspire reuse.</li>
-            <li class="list_items">Learn creative ways to repropose everyday objects.</li>
+         <h1 class="text-xl text-white">Here you can: </h1>
+        <ul class="flex justify-around gap-10">
+            <li class="list_items">🔄 Give away items you don't need.Discover free items from others.</li>
+            <li class="list_items">✍️ Spread awareness about reducing waste.</li>
+            <li class="list_items">📸 Share photos and stories that inspire reuse.</li>
+            <li class="list_items">🌟 Learn creative ways to repropose everyday objects.</li>
         </ul>
     </div>
 </div>
  <!-- about us section end -->
+
+ <!-- last section -->
+  <div class="last_section p-[20px]">
+    <h1 class="text-3xl text-extrabold mb-5 ">💚 Our Purpose</h1>
+    <p class="text-bold text-[#006d2c] text-center mb-4">We don't believe in throwing things away — we believe in passing them on.</p>
+    <p class="text-center mb-4">Your unused items can become someone else's necessities.Together, we can build a reuse-centered community where nothing goes to waste.</p>
+    <div class="flex items-center">
+        <img  src="/website/src/images/image-1.png" alt="img-2">
+        <div class="flex-1 flex flex-col gap-4 items-center">
+            <h2 class="text-3xl text-extrabold text-center">Join the movement</h2>
+            <p class="text-center">Start decluttering with purpose.</p>
+            <div class=" h-20 w-[500px] text-bold text-center">Help someone. Save resources. Spread Kindness.</div>
+            <button class="text-xl  px-4 py-2  bg-[#006d2c] rounded-xl text-white transition duration-300 ease-in-out hover:scale-105 hover:shadow-xl">Get Started -></button>
+
+        </div>
     </div>
+    
+  </div>
+<!-- last section end -->
+ <!-- footer -->
+  <footer>
+    <div class="footer_sec  flex flex-col bg-[#006d2c9a] gap-20 p-[20px]">
+        <div class="flex gap-20  ">
+        <div class="quick_links flex flex-col">
+            <h1 class="text-center ">Quick Links</h1>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Contact</a>
+        </div>
+        <div class="Our_mission">
+            <h1 class="text-center">
+                Our Mission
+            </h1>
+            “Helping people give away what they don't need so others can reuse what they do."</div>
+        <div class="policies">
+            <h1 class="text-center">Policies</h1>
+            Privacy Policy | Terms & Conditions | Community Guidelines
+        </div>
+        </div>
+   <div class="text-center">
+© 2025 ReUse Community. All rights reserved.
+   </div>
+    </div>
+  </footer>
+  <!-- footer-end -->
+</div>
 </body>
 </html>
