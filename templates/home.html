@@ -3,9 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Profile-section</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        *{
+            font-family: "Amaranth";
+            margin:0;
+        }
+        body{
+            height:100%;
+            width:100%;
+        }
+        .main-container{
+            height:100%;
+            width:100%;
+            background:linear-gradient(to bottom, #e5f5e0, #006d2c);
+        }
+        .active{
+            color:#006d2c;
+        }
+    </style>
 </head>
 <body>
-    happy 
+    <!-- main-container = contains all the cotent -->
+    <div class="main-container flex flex-col p-[20px] overflow-y-hidden">
+        <!-- header-start -->
+        <header class="h-10 w-full fixed">
+            <div class="header_section flex items-center justify-around ">
+                <div class="logo flex-1"><h1 class="text-extrabold text-3xl text-[#006d2c]">ReliveIt</h1></div>
+                <ul class="flex gap-10">
+                    <li>Home</li>
+                    <li>Notification</li>
+                    <li>Settings</li>
+                    <li class="active">Profile</li>
+                </ul>
+            </div>
+             </header>
+             <!-- header-end -->
+        <!-- hero-secction -->
+            <div class="hero-section flex flex-col p-10 gap-4">
+                <div class="personal_details flex fixed outline-2 outline-white outline-offset-6 rounded p-5 gap-10">
+                    <div class="pfp h-50 w-60 bg-white transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class=" flex-1 bio">
+                        <h1 class="text-3xl text-[#006d2c]">Harshita</h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam quibusdam voluptates hic omnis natus iste non id nulla reiciendis repellendus atque mollitia recusandae dolore</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae totam sunt magni. Excepturi repellat ea recusandae eaque dignissimos dolore, libero repellendus. Expedita natus facere nihil quis distinctio, non est aliquid?</p>
+                        <div>
+                            <div class="posts  flex flex-col gap-2 text-white">
+                                <p>Total Posts: <span>200</span></p>
+                                <p>Total Blogs: <span>200</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="posts_container">
+                    <div class="h-10 flex justify-around items-center outline-1 rounded p-5">
+                        <h2 class="text-bold transition-transform duration-300 hover:scale-120">Posts</h2>
+                        <h2 class="text-bold transition-transform duration-300 hover:scale-120">Blogs</h2>
+                    </div>
+                    <div class="flex  flex-wrap p-1  overflow-y-auto gap-2 justify-around ">
+                        <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>
+                        <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>
+                         <div class="post bg-black h-70 w-50 ">
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        <!-- hero-section end -->
+       
+    </div> 
 </body>
 </html>

@@ -12,13 +12,18 @@ def login():
 
         #check 
         if username == "admin" and password == "happysingh@example":
-            return render_template("home.html")
+            return home()
         else:
             return render_template("login.html" , error="Invalid username or password")
     return render_template('login.html')
 
-@app.route("/")
+#home-page
+@app.route('/home')
 def home():
+    return render_template("home.html")
+
+@app.route("/")
+def landing():
     return render_template("index.html")
 
 if __name__ == "__main__":
