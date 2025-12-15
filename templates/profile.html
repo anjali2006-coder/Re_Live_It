@@ -11,13 +11,7 @@
             font-family: "Amaranth";
             margin:0;
         }
-        body{
-            height:100%;
-            width:100%;
-        }
         .main-container{
-            height:100%;
-            width:100%;
             background:linear-gradient(to bottom, #e5f5e0, #006d2c);
         }
         .active{
@@ -25,13 +19,13 @@
         }
     </style>
 </head>
-<body>
+<body class="h-full">
     <!-- main-container = contains all the cotent -->
-    <div class="main-container flex flex-col p-[20px] overflow-y-hidden">
+    <div class="main-container h-full flex flex-col p-[20px] ">
         <!-- header-start -->
-        <header class="h-10 w-full fixed">
-            <div class="header_section flex items-center justify-around ">
-                <div class="logo flex-1"><h1 class="text-extrabold text-3xl text-[#006d2c]">ReliveIt</h1></div>
+        <header class="h-10 w-full fixed top-0 left-0 bg-[#e5f5e085] pr-2 pl-2">
+            <div class="header_section flex items-center justify-between ">
+                <div class="logo "><h1 class="text-extrabold text-3xl text-[#006d2c]">ReliveIt</h1></div>
                 <ul class="flex gap-10">
                     <li>Home</li>
                     <li>Notification</li>
@@ -43,7 +37,7 @@
              <!-- header-end -->
         <!-- hero-secction -->
             <div class="hero-section flex flex-col p-10 gap-4">
-                <div class="personal_details flex fixed outline-2 outline-white outline-offset-6 rounded p-5 gap-10">
+                <div class="personal_details flex  outline-2 outline-white outline-offset-6 rounded p-5 gap-10">
                     <div class="pfp h-50 w-60 bg-white transition-transform duration-300 hover:scale-110">
                     </div>
                     <div class=" flex-1 bio">
